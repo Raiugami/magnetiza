@@ -11,12 +11,12 @@ Site institucional da **Magnetiza**, marca de **Alessandra Brassal** que faz ím
 
 Página única (one-page), responsiva, para apresentar os produtos e levar o visitante ao pedido de orçamento. O botão de orçamento fica fixo na tela e leva ao direct do Instagram; para usar WhatsApp, basta preencher o número no script do final do `index.html`.
 
-Seções: apresentação, o que fazemos (ímãs, impressão 3D, festas, empresas e eventos), detalhes, galeria de trabalhos, passo a passo do pedido, dúvidas frequentes e chamada final com link para a Shopee.
+Seções: apresentação, o que fazemos (ímãs, impressão 3D, festas, empresas e eventos), detalhes, galeria de trabalhos, feedbacks de clientes, passo a passo do pedido, dúvidas frequentes e chamada final com link para a Shopee.
 
 ## Tecnologias
 
 - HTML5, CSS3 e JavaScript puros, em um único arquivo, sem build e sem dependências
-- Google Fonts: Fredoka e Nunito
+- Google Fonts: Manrope
 - Dados estruturados (schema.org) e meta tags para busca e compartilhamento
 - Hospedagem: GitHub Pages, com domínio próprio (`CNAME`)
 
@@ -25,11 +25,14 @@ Seções: apresentação, o que fazemos (ímãs, impressão 3D, festas, empresas
 ```
 .
 ├── index.html   # página única do site (estilos e scripts embutidos)
+├── img/         # imagens do portfólio e logo oficial da Magnetiza
 ├── CNAME        # subdomínio magnetiza.imaguiar.com.br
 └── README.md
 ```
 
 ## Como personalizar
+
+O logo original enviado pela cliente está preservado em `img/logo-magnetiza.png`. O símbolo separado, com transparência real, está em `img/icone-magnetiza.png` e aparece no cabeçalho, no rodapé e no ícone da aba. O nome e a assinatura da marca são textos no site, com exibição responsiva. A paleta usa azul-marinho (`#082754`), azul (`#315684`), cinza e branco. A extração do símbolo foi feita com a ferramenta integrada de edição de imagem; o prompt está em `img/README.md`.
 
 No `<script>` do final do `index.html`:
 
@@ -37,7 +40,9 @@ No `<script>` do final do `index.html`:
 - `INSTAGRAM`: usuário do Instagram.
 - `MENSAGEM`: texto pronto do WhatsApp.
 
-Na seção `#galeria`, cada `.slot` é um espaço reservado; para usar foto real, coloque a imagem em `img/` e troque o conteúdo do slot por `<img src="img/arquivo.jpg" alt="descrição">`.
+Na seção `#galeria`, cada `.portfolio-card` contém uma imagem local, título, descrição e link para a publicação original no Instagram. As seis imagens em `img/` foram selecionadas do perfil `@wagnetiza.oficial` em 01/10/2026; incluem fotos e artes de divulgação já publicadas pela marca. As imagens aparecem inteiras e podem ser abertas em tamanho maior. Para trocar um trabalho, atualize a imagem, o texto alternativo, as dimensões e o link da publicação no respectivo card.
+
+A seção `#feedbacks` apresenta as cinco capturas enviadas pela cliente, preservadas em `img/feedbacks/`. O enquadramento uniforme em 9:16 usa `object-fit: contain`, mantendo todo o conteúdo visível. O carrossel permite navegação por botões, rolagem e teclado, com imagens ampliáveis; as frases das legendas foram transcritas dos próprios relatos. Para incluir outro registro, adicione um `.feedback-card` e atualize o total no texto e no rótulo da região.
 
 ## Como rodar localmente
 
