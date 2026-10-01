@@ -1,6 +1,6 @@
-# Magnetiza | Ímãs personalizados
+# Magnetiza | Ímãs personalizados e impressão 3D
 
-Site institucional da **Magnetiza**, marca de **Alessandra Brassal** que faz ímãs de geladeira personalizados de 50 mm para festas, empresas e eventos, com envio para todo o Brasil.
+Site institucional da **Magnetiza**, marca de **Alessandra Brassal** que faz ímãs de geladeira personalizados de 50 mm e peças de decoração em impressão 3D, para festas, empresas e eventos, com envio para todo o Brasil.
 
 - **Cliente:** Alessandra Brassal
 - **Site publicado:** https://magnetiza.imaguiar.com.br/
@@ -11,7 +11,7 @@ Site institucional da **Magnetiza**, marca de **Alessandra Brassal** que faz ím
 
 Página única (one-page), responsiva, para apresentar os produtos e levar o visitante ao pedido de orçamento. O botão de orçamento fica fixo na tela e leva ao direct do Instagram; para usar WhatsApp, basta preencher o número no script do final do `index.html`.
 
-Seções: apresentação, para quem é (festas, empresas, eventos, coleções), detalhes do produto, galeria de modelos, passo a passo do pedido, dúvidas frequentes e chamada final com link para a Shopee.
+Seções: apresentação, o que fazemos (ímãs, impressão 3D, festas, empresas e eventos), detalhes, galeria de trabalhos, passo a passo do pedido, dúvidas frequentes e chamada final com link para a Shopee.
 
 ## Tecnologias
 
